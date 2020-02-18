@@ -2,14 +2,7 @@ import React, { Component } from "react";
 import inputStyle from "./input.module.css";
 
 class Input extends Component {
-  inputHandel = e => {
-    e.preventDefault();
-    this.props.inputHandel();
-  };
-
   render() {
-    console.log(this.props);
-
     return (
       <div className={inputStyle.wrapper}>
         <form className={inputStyle.inputWrapper} onSubmit={this.props.addNote}>

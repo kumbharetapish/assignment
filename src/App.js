@@ -31,7 +31,6 @@ class App extends Component {
         }
       });
     }
-    console.log(newItem);
   }
   handleInput(e) {
     e.preventDefault();
@@ -53,7 +52,6 @@ class App extends Component {
     const items = this.state.items;
     items.map(item => {
       if (item.key === key) {
-        console.log(item.key + "    " + key);
         item.note = note;
       }
     });
