@@ -22,17 +22,38 @@
   border-radius: 10px;
 }
 
+
+.addActivity .hoverEdit {
+  visibility: hidden;
+  background-color: black;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  bottom: 10px;
+}
+
+.addActivity:hover .hoverEdit {
+  visibility: visible;
+}
+
 .timeWrapper {
   position: absolute;
   top: 4px;
   display: flex;
+  cursor: initial;
 }
 
 .time {
   color: darkgoldenrod;
   font-size: 10px;
+  font-weight: bold;
   background-color: khaki;
-  width: 100px;
+  width: 80px;
   height: 15px;
   border-radius: 5px;
   align-items: center;
@@ -53,6 +74,23 @@
   cursor: pointer;
 }
 
+.deleteBtn .hoverText {
+  visibility: hidden;
+  background-color: black;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  bottom: -25px;
+}
+
+.deleteBtn:hover .hoverText {
+  visibility: visible;
+}
 .deleteBtn {
   width: 35px;
   height: 35px;
@@ -69,4 +107,13 @@
   background-color: crimson;
   color: rgb(255, 255, 255);
   transform: scale(1.1, 1.1);
+}
+
+
+
+@media only screen and (max-width: 780px) and (min-width: 400px)  {
+  .noteList {
+      width: 100%;
+  }
+  
 }

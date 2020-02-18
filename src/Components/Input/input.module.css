@@ -42,3 +42,29 @@
 .todoAdd:hover {
   background-color: rgb(250, 215, 17);
 }
+
+
+.todoAdd .hoverText {
+  visibility: hidden;
+  background-color: black;
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  left: -20px;
+  bottom: -25px;
+}
+
+.todoAdd:hover .hoverText {
+  visibility: visible;
+}
+
+
+@media only screen and (max-width: 780px) and (min-width: 400px)  {
+  .inputWrapper {
+      width: 80%;
+  }
+}

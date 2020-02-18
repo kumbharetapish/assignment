@@ -13,8 +13,10 @@ class Input extends Component {
             placeholder="Add Your Activity..."
             className={inputStyle.todoInput}
           ></input>
+          
           <button className={inputStyle.todoAdd} type="submit">
             {"+"}
+            <span className={inputStyle.hoverText}>{"Add Note"}</span>
           </button>
         </form>
       </div>

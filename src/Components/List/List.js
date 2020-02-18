@@ -9,6 +9,7 @@ function List(props) {
         <div className={listStyle.timeWrapper}>
           <span className={listStyle.time}>{item.key}</span>
         </div>
+        <span className={listStyle.hoverEdit}>{"Edit"}</span>
         <input
           type="text"
           className={listStyle.updateFiled}
@@ -18,6 +19,8 @@ function List(props) {
             props.updateNote(e.target.value, item.key);
           }}
         />
+
+        
         <button
           onClick={() => {
             props.deleteNote(item.key);
@@ -25,6 +28,7 @@ function List(props) {
           className={listStyle.deleteBtn}
         >
           {"X"}
+          <span className={listStyle.hoverText}>{"Delete"}</span>
         </button>
       </div>
     );
